@@ -1,0 +1,7 @@
+/node_modules
+/test/config.json
+
+ncp-debug.log
+npm-debug.log
+
+*.lock
