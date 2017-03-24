@@ -3141,6 +3141,7 @@ module.exports =
 
 	module.exports = {
 		"UserUnauthorized": "无效的用户",
+		"UserNameDuplicated": "该用户名已被注册",
 		"SendVerifyCodeFailed": "发送验证码失败",
 		"SendVerifyEmailFailed": "发送验证邮件失败",
 		"InvalidVerifyCode": "验证码无效或已过期",
@@ -3152,101 +3153,16 @@ module.exports =
 		"SavePasswordFailed": "保存密码失败",
 		"SendVerifyCodeTooOften": "发送验证码过于频繁，请稍后再试",
 		"UserNotFound": "未找到指定用户",
-		"SaveEventFailed": "保存活动失败",
-		"DeleteEventFailed": "删除活动失败",
-		"CancelEventFailed": "取消活动失败",
-		"EventNotFound": "未找到指定活动",
-		"EventFinished": "活动已结束",
-		"EventCanceled": "活动已取消",
-		"EventDeleted": "活动已删除",
-		"EventNotStarted": "活动尚未开始",
-		"EventStarted": "活动已开始",
-		"EventPublished": "活动已经发布，请勿重复发布",
-		"PublishingEventStarted": "已过活动开始时间，请编辑后重新发布",
-		"SaveProfileFailed": "保存用户信息失败",
-		"SaveSignatureFailed": "更新签名档失败",
-		"SendMessageFailed": "发送消息失败",
-		"InvalidMessageDestination": "不能给自己发消息",
 		"UserNameSetTwice": "用户名只能设置一次，设置之后不能修改",
-		"NotAttendee": "非活动的参与者",
-		"EventNotFinished": "活动结束后才能进行评价",
-		"RatingFailed": "评价失败",
-		"FinishEventFailed": "结束活动失败",
-		"InvitationNotFound": "未找到指定活动邀请",
-		"InvalidEventTime": "活动结束时间不能早于开始时间",
-		"PublishEventFailed": "发布活动失败",
-		"OrderNotFound": "未找到指定订单",
-		"SaveCityFailed": "保存城市信息失败",
-		"SelfFollowingNotAllowed": "不能关注自己",
-		"NeedFollowing": "需关注对方才能进行此操作",
-		"InvalidNext": "无效的分页标识",
-		"WeatherDataOutOfRange": "你请求的天气情况超出范围",
-		"SelfFlirtNotAllowed": "只能想认识其他参与者",
-		"InvalidEventCategory": "无效的活动类型",
-		"InvalidProfile": "无效的个人信息",
-		"UserNicknameDuplicated": "该昵称已被占用",
-		"CommentMomentFailed": "评论失败",
-		"DeleteCommentFailed": "删除评论失败",
-		"ApplyClosed": "该活动报名已截止",
-		"EventCommentNotFound": "未找到指定活动留言",
-		"NoPermission": "根据用户设置，你没有权限进行此操作",
-		"InvalidEventToken": "无效的活动标识",
-		"ProfileRequired": "你尚未设置个人信息",
-		"NotAudience": "你不符合目标人群特征",
-		"InvalidCampaignTime": "结束时间不能早于开始时间",
-		"SaveCampaignFailed": "创建活动失败",
-		"CampaignFailed": "参加促销活动失败",
-		"CreateTopicFailed": "创建话题失败",
-		"RemoveTopicFailed": "删除话题失败",
-		"TopicNotFound": "未找到指定话题",
-		"ReplyTopicFailed": "回复话题失败",
-		"ClearEventFailed": "结清活动费用失败",
-		"InvalidPaymentAmount": "无效的活动金额",
-		"RemoveTopicCommentFailed": "删除话题回复失败",
-		"NotOrganizer": "你不是组织者，没有权限进行此操作",
-		"InvalidFeeMode": "只有AA制活动才能设置收款金额",
-		"ApplyQuotaExceed": "所选人数超过限额",
-		"ApplyInventoryExceed": "库存不足",
-		"EventApplied": "不能重复报名",
-		"CreateOrderFailed": "创建订单失败",
-		"CampaignNotFound": "未找到指定促销活动",
-		"CampaignQuotaExceed": "参加活动次数超过限额",
-		"MasterNameDuplicated": "管理员用户名重复",
-		"CreateMasterFailed": "创建管理员失败",
-		"PasswordNotChanged": "新旧密码不能相同",
-		"MasterNotFound": "未找到指定管理员",
-		"InvalidMasterStatus": "管理员账号已激活",
-		"ActivateMasterFailed": "激活管理员账号失败",
-		"NotApproved": "你参加活动的申请尚未通过批准",
-		"AttendeeValidated": "已通过验证",
-		"ValidateAttendeeFailed": "验票失败",
-		"MobileRequired": "请先绑定手机号",
-		"SavePromotionFailed": "保存促销信息失败",
-		"PromotionNotFound": "未找到指定促销活动",
-		"FriendInvited": "不能重复邀请好友",
-		"EventTokenExpired": "活动二维码已过期",
-		"SendFeedbackFailed": "发送反馈失败",
-		"ReportEventFailed": "举报活动失败",
 		"UserIdentityRequired": "请输入手机号或邮箱",
 		"InvalidUserToken": "验证码无效",
 		"UserTokenExpired": "验证码已过期，请重新验证",
-		"InvalidEventStatus": "无效的活动状态",
-		"LinkingPrivateEvent": "不能连接私人活动",
-		"LinkingEventInventoryExceeded": "连接的活动库存超过总库存",
-		"OrderExpired": "订单已过期，请重新报名参加活动",
-		"ReportUserFailed": "举报用户失败",
-		"ReportAppFailed": "反馈失败",
-		"SaveAppVersionFailed": "保存版本信息失败",
-		"AppVersionNotFound": "未找到指定的版本信息",
-		"SaveAppPlatformFailed": "保存平台信息失败",
-		"PublishAppVersionFailed": "发布版本信息失败",
-		"InvalidPlatform": "无效的平台名称",
-		"EventHasAttendee": "已有用户参加活动，不能取消",
-		"AppPlatformNotFound": "未找到制定平台信息",
-		"EventNotCanceled": "只能删除已取消的活动",
-		"PlatformDuplicated": "平台名称重复",
-		"PlatformCodeDuplicated": "平台识别码重复",
-		"InvalidEventFeeId": "无效的票据标识"
+		"InvalidProfile": "无效的个人信息",
+		"SaveProfileFailed": "保存用户信息失败",
+		"SaveSignatureFailed": "更新签名档失败",
+		"UserNicknameDuplicated": "该昵称已被占用",
+		"MobileRequired": "请先绑定手机号",
+		"SaveCityFailed": "保存城市信息失败"
 	};
 
 /***/ },
@@ -3984,10 +3900,6 @@ module.exports =
 	
 	var _errors2 = _interopRequireDefault(_errors);
 	
-	var _validator = __webpack_require__(14);
-	
-	var _user = __webpack_require__(9);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
@@ -4068,23 +3980,17 @@ module.exports =
 	          }
 	        }, _callee, this);
 	      }));
-	
+
 	      function getCityCode(_x) {
 	        return _ref.apply(this, arguments);
 	      }
-	
+
 	      return getCityCode;
 	    }()
 	  }]);
-	
+
 	  return City;
 	}();
-	
-	City.SCHEMA = {
-	  /* eslint-disable newline-per-chained-call */
-	  country: _validator.Joi.string().required().invalid('UNKNOWN'),
-	  userId: _validator.Joi.number().integer().min(1000000000).required()
-	};
 
 /***/ },
 /* 19 */

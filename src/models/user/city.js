@@ -1,6 +1,4 @@
 import errors from '../../errors'
-import { validate, getSchema, Joi as T } from '../../validator'
-import { User } from '../user/user'
 
 const ERRORS = {
   SaveCityFailed: 400,
@@ -9,12 +7,6 @@ const ERRORS = {
 errors.register(ERRORS)
 
 export class City {
-  static SCHEMA = {
-    /* eslint-disable newline-per-chained-call */
-    country: T.string().required().invalid('UNKNOWN'),
-    userId: T.number().integer().min(1000000000).required(),
-  }
-
   static async getCityCode(geo) {
     if (!geo) return null
     const { country, province, city } = geo
