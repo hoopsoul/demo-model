@@ -8,8 +8,8 @@
     "es6": true,
     "node": true
   },
-  'ecmaFeatures': {
-    'modules': true,
+  "ecmaFeatures": {
+    "modules": true
   },
   "rules": {
     "no-confusing-arrow": 0,
