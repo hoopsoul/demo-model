@@ -4,7 +4,7 @@
     "node": ">=6",
     "npm": ">3.1"
   },
-  "name": "demo-models",
+  "name": "demo-model",
   "version": "1.0.8",
   "description": "Implement data models.",
   "main": "dist/models.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/hoopsoul/demo-models.git"
+    "url": "git+ssh://git@github.com/hoopsoul/demo-model.git"
   },
   "dependencies": {
     "date-utils": "1.2.21",
@@ -59,7 +59,7 @@
     "webpack": "^1.13.1"
   },
   "bugs": {
-    "url": "https://github.com/mongris/demo-models/issues"
+    "url": "https://github.com/mongris/demo-model/issues"
   },
-  "homepage": "https://github.com/mongris/demo-models#readme"
+  "homepage": "https://github.com/mongris/demo-model#readme"
 }
