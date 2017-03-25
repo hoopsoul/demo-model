@@ -841,11 +841,11 @@ module.exports =
 	
 	var models = _interopRequireWildcard(_models);
 	
-	var _db = __webpack_require__(19);
+	var _db = __webpack_require__(20);
 	
 	var _db2 = _interopRequireDefault(_db);
 	
-	var _errors2 = __webpack_require__(10);
+	var _errors2 = __webpack_require__(11);
 	
 	var _errors3 = _interopRequireDefault(_errors2);
 	
@@ -1569,26 +1569,16 @@ module.exports =
 	  value: true
 	});
 	
-	var _user = __webpack_require__(8);
+	var _hello = __webpack_require__(8);
 	
-	Object.keys(_user).forEach(function (key) {
+	Object.keys(_hello).forEach(function (key) {
 	  if (key === "default" || key === "__esModule") return;
 	  Object.defineProperty(exports, key, {
 	    enumerable: true,
 	    get: function get() {
-	      return _user[key];
+	      return _hello[key];
 	    }
 	  });
-	});
-
-/***/ },
-/* 8 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
 	});
 	
 	var _user = __webpack_require__(9);
@@ -1602,8 +1592,59 @@ module.exports =
 	    }
 	  });
 	});
+
+/***/ },
+/* 8 */
+/***/ function(module, exports) {
+
+	"use strict";
 	
-	var _profile = __webpack_require__(16);
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	var Hello = exports.Hello = function () {
+	  function Hello() {
+	    _classCallCheck(this, Hello);
+	  }
+	
+	  _createClass(Hello, null, [{
+	    key: "say",
+	    value: function say(hi) {
+	      return hi;
+	    }
+	  }]);
+
+	  return Hello;
+	}();
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _user = __webpack_require__(10);
+	
+	Object.keys(_user).forEach(function (key) {
+	  if (key === "default" || key === "__esModule") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _user[key];
+	    }
+	  });
+	});
+	
+	var _profile = __webpack_require__(17);
 	
 	Object.keys(_profile).forEach(function (key) {
 	  if (key === "default" || key === "__esModule") return;
@@ -1616,7 +1657,7 @@ module.exports =
 	});
 
 /***/ },
-/* 9 */
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1630,17 +1671,17 @@ module.exports =
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _errors = __webpack_require__(10);
+	var _errors = __webpack_require__(11);
 	
 	var _errors2 = _interopRequireDefault(_errors);
 	
-	var _hashids = __webpack_require__(13);
+	var _hashids = __webpack_require__(14);
 	
 	var _hashids2 = _interopRequireDefault(_hashids);
 	
-	var _validator = __webpack_require__(14);
+	var _validator = __webpack_require__(15);
 	
-	var _profile = __webpack_require__(16);
+	var _profile = __webpack_require__(17);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -3071,7 +3112,7 @@ module.exports =
 	};
 
 /***/ },
-/* 10 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3082,7 +3123,7 @@ module.exports =
 	
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 	
-	var _restifyErrors = __webpack_require__(11);
+	var _restifyErrors = __webpack_require__(12);
 	
 	var _restifyErrors2 = _interopRequireDefault(_restifyErrors);
 	
@@ -3097,7 +3138,7 @@ module.exports =
 	  return name;
 	}
 	
-	_restifyErrors2.default.localization = __webpack_require__(12);
+	_restifyErrors2.default.localization = __webpack_require__(13);
 	
 	_restifyErrors2.default.lang = function (error) {
 	  if (error.message) return error.message;
@@ -3130,13 +3171,13 @@ module.exports =
 	exports.default = _restifyErrors2.default;
 
 /***/ },
-/* 11 */
+/* 12 */
 /***/ function(module, exports) {
 
 	module.exports = require("restify-errors");
 
 /***/ },
-/* 12 */
+/* 13 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -3166,13 +3207,13 @@ module.exports =
 	};
 
 /***/ },
-/* 13 */
+/* 14 */
 /***/ function(module, exports) {
 
 	module.exports = require("hashids");
 
 /***/ },
-/* 14 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3184,11 +3225,11 @@ module.exports =
 	
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 	
-	var _joi = __webpack_require__(15);
+	var _joi = __webpack_require__(16);
 	
 	var _joi2 = _interopRequireDefault(_joi);
 	
-	var _errors = __webpack_require__(10);
+	var _errors = __webpack_require__(11);
 	
 	var _errors2 = _interopRequireDefault(_errors);
 	
@@ -3347,13 +3388,13 @@ module.exports =
 	exports.Joi = _joi2.default;
 
 /***/ },
-/* 15 */
+/* 16 */
 /***/ function(module, exports) {
 
 	module.exports = require("joi");
 
 /***/ },
-/* 16 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3365,17 +3406,17 @@ module.exports =
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	__webpack_require__(17);
+	__webpack_require__(18);
 	
-	var _errors = __webpack_require__(10);
+	var _errors = __webpack_require__(11);
 	
 	var _errors2 = _interopRequireDefault(_errors);
 	
-	var _validator = __webpack_require__(14);
+	var _validator = __webpack_require__(15);
 	
-	var _user = __webpack_require__(9);
+	var _user = __webpack_require__(10);
 	
-	var _city = __webpack_require__(18);
+	var _city = __webpack_require__(19);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -3878,13 +3919,13 @@ module.exports =
 	};
 
 /***/ },
-/* 17 */
+/* 18 */
 /***/ function(module, exports) {
 
 	module.exports = require("date-utils");
 
 /***/ },
-/* 18 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3896,7 +3937,7 @@ module.exports =
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _errors = __webpack_require__(10);
+	var _errors = __webpack_require__(11);
 	
 	var _errors2 = _interopRequireDefault(_errors);
 	
@@ -3993,7 +4034,7 @@ module.exports =
 	}();
 
 /***/ },
-/* 19 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4143,15 +4184,15 @@ module.exports =
 	  };
 	}();
 	
-	var _pgThen = __webpack_require__(20);
+	var _pgThen = __webpack_require__(21);
 	
 	var _pgThen2 = _interopRequireDefault(_pgThen);
 	
-	var _connections = __webpack_require__(21);
+	var _connections = __webpack_require__(22);
 	
 	var _connections2 = _interopRequireDefault(_connections);
 	
-	var _manager = __webpack_require__(22);
+	var _manager = __webpack_require__(23);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -4170,13 +4211,13 @@ module.exports =
 	exports.default = { configure: configure, query: query, transaction: transaction };
 
 /***/ },
-/* 20 */
+/* 21 */
 /***/ function(module, exports) {
 
 	module.exports = require("pg-then");
 
 /***/ },
-/* 21 */
+/* 22 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -4257,7 +4298,7 @@ module.exports =
 	};
 
 /***/ },
-/* 22 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4269,11 +4310,11 @@ module.exports =
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _fs = __webpack_require__(23);
+	var _fs = __webpack_require__(24);
 	
 	var _fs2 = _interopRequireDefault(_fs);
 	
-	var _path = __webpack_require__(24);
+	var _path = __webpack_require__(25);
 	
 	var _path2 = _interopRequireDefault(_path);
 	
@@ -4710,7 +4751,7 @@ module.exports =
 	                            }
 	
 	                            updatorPath = '.' + _path2.default.join(patchPath, 'update.js').slice(__dirname.length);
-	                            updator = __webpack_require__(25)(updatorPath);
+	                            updator = __webpack_require__(26)(updatorPath);
 	                            _context6.next = 20;
 	                            return updator.putPatch(client);
 	
@@ -4840,31 +4881,31 @@ module.exports =
 	}();
 
 /***/ },
-/* 23 */
+/* 24 */
 /***/ function(module, exports) {
 
 	module.exports = require("fs");
 
 /***/ },
-/* 24 */
+/* 25 */
 /***/ function(module, exports) {
 
 	module.exports = require("path");
 
 /***/ },
-/* 25 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./connections": 21,
-		"./connections.js": 21,
-		"./index": 19,
-		"./index.js": 19,
-		"./manager": 22,
-		"./manager.js": 22,
-		"./patches/000-049/00/query.sql": 26,
-		"./patches/000-049/01/query.sql": 27,
-		"./patches/000-049/02/query.sql": 28
+		"./connections": 22,
+		"./connections.js": 22,
+		"./index": 20,
+		"./index.js": 20,
+		"./manager": 23,
+		"./manager.js": 23,
+		"./patches/000-049/00/query.sql": 27,
+		"./patches/000-049/01/query.sql": 28,
+		"./patches/000-049/02/query.sql": 29
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -4877,23 +4918,23 @@ module.exports =
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 25;
+	webpackContext.id = 26;
 
-
-/***/ },
-/* 26 */
-/***/ function(module, exports) {
-
-	module.exports = require("./patches/000-049/00/query.sql");
 
 /***/ },
 /* 27 */
 /***/ function(module, exports) {
 
-	module.exports = require("./patches/000-049/01/query.sql");
+	module.exports = require("./patches/000-049/00/query.sql");
 
 /***/ },
 /* 28 */
+/***/ function(module, exports) {
+
+	module.exports = require("./patches/000-049/01/query.sql");
+
+/***/ },
+/* 29 */
 /***/ function(module, exports) {
 
 	module.exports = require("./patches/000-049/02/query.sql");
